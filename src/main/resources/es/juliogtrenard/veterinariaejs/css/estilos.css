@@ -1,0 +1,15 @@
+.button {
+    -fx-background-color: #C2F0E2; /* verde */
+    -fx-background-radius: 10px; /* bordes redondeados */
+    -fx-border-width: 2px;
+    -fx-border-color: #69F2C9; /* verde */
+    -fx-border-radius: 10px; /* bordes redondeados */
+}
+
+.text-field {
+    -fx-background-radius: 10px; /* bordes redondeados */
+    -fx-border-width: 2px;
+    -fx-border-color: #CCCCCC; /* gris claro */
+    -fx-border-color: #69F2C9; /* verde */
+    -fx-border-radius: 10px; /* bordes redondeados */
+}
