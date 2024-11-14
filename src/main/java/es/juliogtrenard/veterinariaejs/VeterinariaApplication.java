@@ -13,6 +13,7 @@ public class VeterinariaApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(VeterinariaApplication.class.getResource("/es/juliogtrenard/veterinariaejs/fxml/veterinaria.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Veterinaria Gasteiz");
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }
