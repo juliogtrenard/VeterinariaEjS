@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <HBox alignment="CENTER" spacing="10">
+                <VBox alignment="CENTER" spacing="10">
+                    <Label text="Nombre:" />
+                    <TextField fx:id="txtNombre" />
+                    <Label text="Especie:" />
+                    <TextField fx:id="txtEspecie" />
+                    <Label text="Raza:" />
+                    <TextField fx:id="txtRaza" />
+                </VBox>
+                <VBox alignment="CENTER" spacing="10">
+                    <Label text="Edad:" />
+                    <TextField fx:id="txtEdad" />
+                    <Label text="Peso:" />
+                    <TextField fx:id="txtPeso" />
+                    <Label text="Observaciones:" />
+                    <TextField fx:id="txtObservaciones" />
+                </VBox>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10">
+                <Label text="Sexo:" />
+                <RadioButton fx:id="rbMasculino" mnemonicParsing="false" selected="true" text="Masculino">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="tgSexo" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="rbFemenino" mnemonicParsing="false" text="Femenino" toggleGroup="$tgSexo" />
+            </HBox>
+            <HBox alignment="CENTER" spacing="10">
+                <Label text="Fecha de la primera consulta:" />
+                <DatePicker fx:id="fecha" />
+            </HBox>
+            <HBox alignment="CENTER" spacing="10">
+                <Label text="Foto:" />
+                <ImageView fx:id="foto" fitHeight="150.0" fitWidth="200.0" />
+                <HBox alignment="CENTER" spacing="10">
+                    <Button onAction="#seleccionImagen" text="Seleccionar foto" />
+                    <Button fx:id="btnFotoBorrar" onAction="#borrarFoto" text="Eliminar foto" />
+                </HBox>
+            </HBox>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" spacing="10">
+            <Button onAction="#guardar" text="Guardar" />
+            <Button onAction="#cancelar" text="Cancelar" />
+        </HBox>
+    </bottom>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</BorderPane>

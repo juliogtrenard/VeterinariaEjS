@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="es.juliogtrenard.veterinariaejs.VeterinariaController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.juliogtrenard.veterinariaejs.controladores.VeterinariaController">
+    <MenuBar>
+        <Menu mnemonicParsing="false" text="Editar">
+            <MenuItem mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
+            <MenuItem fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" text="Editar" />
+            <MenuItem fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+        </Menu>
+        <Menu mnemonicParsing="false" onAction="#acercade" text="Acerca de" />
+    </MenuBar>
+    <VBox alignment="CENTER" prefHeight="109.0" prefWidth="600.0" spacing="15.0">
+        <Label text="VETERINARIA GASTEIZ">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="600.0">
+            <Label text="Nombre: " />
+            <TextField fx:id="filtroNombre" />
+        </HBox>
+    </VBox>
+    <TableView fx:id="tabla" prefHeight="386.0" prefWidth="759.0">
+      <VBox.margin>
+         <Insets left="20.0" right="20.0" />
+      </VBox.margin></TableView>
+    <HBox alignment="CENTER" prefHeight="78.0" prefWidth="800.0">
+        <Button mnemonicParsing="false" onAction="#nuevo" prefHeight="24.0" prefWidth="94.0" text="Nuevo" />
+    </HBox>
 </VBox>
