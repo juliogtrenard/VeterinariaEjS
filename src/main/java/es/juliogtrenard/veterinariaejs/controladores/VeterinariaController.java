@@ -39,6 +39,12 @@ public class VeterinariaController implements Initializable {
     private MenuItem btnEliminar;
 
     /**
+     * Boton para mostrar datos
+     */
+    @FXML
+    private MenuItem btnDatos;
+
+    /**
      * Campo de texto para filtrar por nombre
      */
     @FXML
@@ -220,6 +226,7 @@ public class VeterinariaController implements Initializable {
     public void deshabilitarMenus(boolean deshabilitado) {
         btnEditar.setDisable(deshabilitado);
         btnEliminar.setDisable(deshabilitado);
+        btnDatos.setDisable(deshabilitado);
     }
 
     /**
@@ -266,6 +273,16 @@ public class VeterinariaController implements Initializable {
         ObservableList<Animal> animales = DaoAnimal.cargarListado();
         masterData.addAll(animales);
         tabla.setItems(animales);
+    }
+
+    public void mostrarDatos() {
+        Animal animal = tabla.getSelectionModel().getSelectedItem();
+        if (animal == null) {
+            alerta("Tienes que seleccionar un animal de la tabla");
+        } else {
+            String info = animal.toString();
+            confirmacion(info);
+        }
     }
 
     /**

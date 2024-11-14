@@ -11,6 +11,7 @@
             <MenuItem mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
             <MenuItem fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" text="Editar" />
             <MenuItem fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+            <MenuItem fx:id="btnDatos" mnemonicParsing="false" onAction="#mostrarDatos" text="Mostrar datos" />
         </Menu>
         <Menu mnemonicParsing="false" text="Más información">
             <MenuItem onAction="#acercaDe" mnemonicParsing="false" text="Acerca de" />

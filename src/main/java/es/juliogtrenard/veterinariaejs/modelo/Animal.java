@@ -270,6 +270,23 @@ public class Animal {
         this.foto = foto;
     }
 
+    /**
+     * Metodo toString
+     * @return la cadena de texto
+     */
+    @Override
+    public String toString() {
+        return "Animal:\n" +
+                "  Nombre: " + nombre + "\n" +
+                "  Especie: " + especie + "\n" +
+                "  Raza: " + raza + "\n" +
+                "  Sexo: " + sexo + "\n" +
+                "  Edad: " + edad + " años\n" +
+                "  Peso: " + peso + " kg\n" +
+                "  Observaciones: " + observaciones + "\n" +
+                "  Fecha de primera consulta: " + fecha_primera_consulta;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
