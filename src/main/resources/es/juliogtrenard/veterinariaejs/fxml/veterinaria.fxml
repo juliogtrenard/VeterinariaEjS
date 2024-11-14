@@ -7,7 +7,7 @@
 
 <VBox stylesheets="@../css/estilos.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.juliogtrenard.veterinariaejs.controladores.VeterinariaController">
     <MenuBar>
-        <Menu mnemonicParsing="false" text="Editar">
+        <Menu mnemonicParsing="false" text="Opciones">
             <MenuItem mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
             <MenuItem fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" text="Editar" />
             <MenuItem fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
