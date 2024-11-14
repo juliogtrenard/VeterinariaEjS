@@ -235,6 +235,7 @@ public class VeterinariaController implements Initializable {
     public void crearTabla() {
         TableColumn<Animal, Integer> colId = new TableColumn<>("ID");
         colId.setCellValueFactory(new PropertyValueFactory("id"));
+        colId.setStyle("-fx-alignment: CENTER_RIGHT;");
         TableColumn<Animal, String> colNombre = new TableColumn<>("NOMBRE");
         colNombre.setCellValueFactory(new PropertyValueFactory("nombre"));
         TableColumn<Animal, String> colEspecie = new TableColumn<>("ESPECIE");
@@ -245,10 +246,13 @@ public class VeterinariaController implements Initializable {
         colSexo.setCellValueFactory(new PropertyValueFactory("sexo"));
         TableColumn<Animal, Integer> colEdad = new TableColumn<>("EDAD");
         colEdad.setCellValueFactory(new PropertyValueFactory("edad"));
+        colEdad.setStyle("-fx-alignment: CENTER_RIGHT;");
         TableColumn<Animal, Integer> colPeso = new TableColumn<>("PESO");
         colPeso.setCellValueFactory(new PropertyValueFactory("peso"));
+        colPeso.setStyle("-fx-alignment: CENTER_RIGHT;");
         TableColumn<Animal, LocalDate> colFecha = new TableColumn<>("PRIMERA CONSULTA");
         colFecha.setCellValueFactory(new PropertyValueFactory("fecha_primera_consulta"));
+        colFecha.setStyle("-fx-alignment: CENTER_RIGHT;");
 
         colId.prefWidthProperty().bind(tabla.widthProperty().divide(8));
         colNombre.prefWidthProperty().bind(tabla.widthProperty().divide(8));
