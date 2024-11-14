@@ -61,6 +61,8 @@ public class VeterinariaController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        deshabilitarMenus(true);
+
         crearTabla();
 
         cargarAnimales();
@@ -296,8 +298,7 @@ public class VeterinariaController implements Initializable {
      * Información de la aplicación
      * @param actionEvent el evento
      */
-    public void acercade(ActionEvent actionEvent) {
-        System.out.println("dfsfsdf");
+    public void acercaDe(ActionEvent actionEvent) {
         Alert alerta = new Alert(Alert.AlertType.INFORMATION);
         alerta.setHeaderText(null);
         alerta.setTitle("Acerca de:");

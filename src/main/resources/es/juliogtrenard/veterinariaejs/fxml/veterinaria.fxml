@@ -12,7 +12,9 @@
             <MenuItem fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" text="Editar" />
             <MenuItem fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
         </Menu>
-        <Menu mnemonicParsing="false" onAction="#acercade" text="Acerca de" />
+        <Menu mnemonicParsing="false" text="Más información">
+            <MenuItem onAction="#acercaDe" mnemonicParsing="false" text="Acerca de" />
+        </Menu>
     </MenuBar>
     <VBox alignment="CENTER" prefHeight="109.0" prefWidth="600.0" spacing="15.0">
         <Label text="VETERINARIA GASTEIZ">
