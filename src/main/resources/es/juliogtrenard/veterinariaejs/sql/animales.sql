@@ -15,3 +15,28 @@ CREATE TABLE `Animales` (
   `foto` blob DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO Animales (
+  id,
+  nombre,
+  especie,
+  raza,
+  edad,
+  peso,
+  observaciones,
+  sexo,
+  fecha_primera_consulta,
+  foto
+)
+VALUES (
+  1,
+  'Fido',
+  'Perro',
+  'Golden Retriever',
+  3,
+  20.5,
+  'Es un perro muy amigable',
+  'M',
+  '2024-08-11',
+  NULL
+);
