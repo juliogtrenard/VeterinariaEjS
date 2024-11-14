@@ -1,6 +1,7 @@
 module es.juliogtrenard.veterinariaejs {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
 
 
     opens es.juliogtrenard.veterinariaejs to javafx.fxml;
